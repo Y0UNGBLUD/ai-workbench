@@ -1,0 +1,37 @@
+@use '@/style/abstracts/mixins' as mixin;
+.base-dialog {
+  &__card {
+    border-radius: 0 !important;
+    border: 2px solid var(--ink);
+    > div {
+      border-radius: 0 !important;
+    }
+  }
+  // header
+  &__header {
+  }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: mixin.rem(15px);
+  }
+  // content
+  &__content {
+    font-size: mixin.rem(15px);
+  }
+  // footer
+  &__footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  &__footer-btn {
+    font-weight: 600;
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+    &.bg-gray {
+      background: var(--gray-300);
+    }
+  }
+}

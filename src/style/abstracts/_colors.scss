@@ -1,0 +1,79 @@
+/* ===========================================
+   1. 🎨 Palette
+   =========================================== */
+:root {
+  /* ====== Base Color ====== */
+  --coral: #ff7058;
+  --lime: #b5ff32;
+  --blue: #6d79f6;
+  --butter: #ffd768;
+  --green: #0c7157;
+  --ink: #141712;
+  /* ====== Gray Palette ====== */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+}
+/* ===========================================
+   2. ☀️ Semantic (Light theme)
+   =========================================== */
+:root {
+  /* ====== Brand ====== */
+  --color-primary: var(--lime);
+  --color-secondary: var(--blue);
+  /* ====== Status ====== */
+  --color-positive: #34a853;
+  --color-negative: #ea4335;
+  /* ====== Quasar ====== */
+  --q-primary: var(--color-primary);
+  --q-secndary: var(--color-secondary);
+  --q-accent: var(--coral);
+  --q-positive: var(--color-positive);
+  --q-negative: var(--color-negative);
+  //   --q-info: #31ccec;
+  //   --q-warning: #f2c037;
+  //   --q-dark: #1d1d1d;
+  //   --q-dark-page: #121212;
+  //   --q-shadow-color: #000;
+  //   --q-dark-shadow-color: #fff;
+  /* ====== Text ====== */
+  --color-text-primary: var(--gray-900);
+  --color-text-secondary: var(--gray-600);
+  --color-text-tertiary: var(--gray-500);
+  --color-text-disabled: var(--gray-400);
+  /* ====== surface ====== */
+  --color-background: var(--gray-100);
+  --color-surface: #fff;
+  /* ====== border ====== */
+  --color-border: var(--gray-200);
+  --color-border-subtle: var(--gray-100);
+  --color-border-strong: var(--gray-300);
+}
+/* ===========================================
+  3. 🌙 Semantic (Dark theme)
+   =========================================== */
+body.body--dark {
+  /* ====== Brand ====== */
+  --color-primary: var(--lime);
+  --color-secondary: var(--blue);
+  /* ====== Text ====== */
+  --color-text-primary: #fff;
+  --color-text-secondary: var(--gray-300);
+  --color-text-tertiary: var(--gray-400);
+  --color-text-disabled: var(--gray-600);
+  /* ====== surface ====== */
+  --color-background: var(--gray-950);
+  --color-surface: var(--gray-900);
+  /* ====== border ====== */
+  --color-border: var(--gray-800);
+  --color-border-subtle: var(--gray-900);
+  --color-border-strong: var(--gray-700);
+}

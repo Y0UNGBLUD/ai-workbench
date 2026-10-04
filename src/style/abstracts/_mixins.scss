@@ -1,0 +1,108 @@
+@use 'sass:math';
+@use 'sass:color';
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin text-ellipsis-multi($lines: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@function rem($px) {
+  @return math.div($px, 16px) * 1rem;
+}
+
+@mixin button-reset() {
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+@mixin list-reset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin figure-round($img-fit: cover) {
+  border-radius: 50%;
+  overflow: hidden;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: $img-fit;
+    object-position: center;
+  }
+}
+
+@mixin user-drag-none() {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+@mixin user-select-none() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+@mixin make-hsl-var($name, $color) {
+  --#{$name}-h: #{color.channel($color, 'hue', $space: hsl)};
+  --#{$name}-s: #{color.channel($color, 'saturation', $space: hsl)};
+  --#{$name}-l: #{color.channel($color, 'lightness', $space: hsl)};
+  --#{$name}-hsl: #{color.channel($color, 'hue', $space: hsl)}
+    #{color.channel($color, 'saturation', $space: hsl)}
+    #{color.channel($color, 'lightness', $space: hsl)};
+}
+
+@mixin dark-vars($selector) {
+  body.body--dark #{$selector} {
+    @content;
+  }
+}
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+@mixin scrollbar($size: 6px) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

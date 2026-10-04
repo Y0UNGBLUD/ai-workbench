@@ -1,0 +1,69 @@
+@use '@/style/abstracts/mixins' as mixin;
+.base-form {
+  $radius: 4px;
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  .base-form__label {
+    display: block;
+    font-size: mixin.rem(16px);
+    line-height: mixin.rem(24px);
+    font-weight: 600;
+    color: var(--form-label-text);
+    word-break: break-all;
+    margin-bottom: 4px;
+    &.is-required {
+      &::after {
+        content: ' *';
+        color: var(--color-status-negative);
+        font-weight: 600;
+      }
+    }
+  }
+  .q-field--with-bottom {
+    &.no-bottom {
+      padding-bottom: 0;
+      .q-field__bottom {
+        padding: 0;
+        min-height: 0;
+        opacity: 0;
+      }
+    }
+  }
+  .q-field__control {
+    background: var(--color-surface);
+  }
+  .q-field--dense {
+    .q-field__prepend {
+      padding-right: 0;
+    }
+    .q-field__native {
+      &::placeholder {
+        color: var(--color-text-secondary);
+      }
+    }
+    .q-field__bottom {
+      font-size: mixin.rem(14px);
+      line-height: mixin.rem(24px);
+      color: var(--color-text-secondary);
+      padding: 8px 0 0;
+      min-height: 24px;
+      opacity: 1;
+      transition: all 200ms;
+    }
+  }
+  // error
+  .q-field--error {
+    .q-field__messages {
+      color: var(--color-negative);
+    }
+  }
+}

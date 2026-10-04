@@ -1,0 +1,100 @@
+body {
+  font-family:
+    'Pretendard Std',
+    'Roboto',
+    -apple-system,
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif !important;
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local('Pretendard Std Black'),
+    url('@/assets/fonts/woff2/PretendardStd-Black.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local('Pretendard Std ExtraBold'),
+    url('@/assets/fonts/woff2/PretendardStd-ExtraBold.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Pretendard Std Bold'),
+    url('@/assets/fonts/woff2/PretendardStd-Bold.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local('Pretendard Std SemiBold'),
+    url('@/assets/fonts/woff2/PretendardStd-SemiBold.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local('Pretendard Std Medium'),
+    url('@/assets/fonts/woff2/PretendardStd-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Pretendard Std Regular'),
+    url('@/assets/fonts/woff2/PretendardStd-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local('Pretendard Std Light'),
+    url('@/assets/fonts/woff2/PretendardStd-Light.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 200;
+  font-display: swap;
+  src:
+    local('Pretendard Std ExtraLight'),
+    url('@/assets/fonts/woff2/PretendardStd-ExtraLight.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard Std';
+  font-weight: 100;
+  font-display: swap;
+  src:
+    local('Pretendard Std Thin'),
+    url('@/assets/fonts/woff2/PretendardStd-Thin.woff2') format('woff2'),
+    url('@/assets/fonts/woff/PretendardStd-Thin.woff') format('woff');
+}
